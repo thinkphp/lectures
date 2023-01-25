@@ -3,6 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+
+Full Stack Developer
+
 Maths, AI, JavaScript, Accessibility, Algorithms.
 
 * [http://adrianstatescu.ch](http://adrianstatescu.ch)
