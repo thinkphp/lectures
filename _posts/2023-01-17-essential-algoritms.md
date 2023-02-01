@@ -32,7 +32,11 @@ E =
 
 8. Fie expresia E = (a + b) / (c - d). Sa se calculeze valoarea lui E, unde a, b, c, d sunt numere reale.
 
-9. Se citesc trei numere intregi a, b, c. Sa se calculeze maximul lor.
+9. Let's compute Max of Three.
+
+10. Let's compute the Max of Two without IF Statement Control Flow.
+
+11. Se citesc trei numere intregi a, b, c. Sa se calculeze maximul lor.
     ```
     Read a, b, c
     max <-- a
@@ -42,9 +46,9 @@ E =
        max <-- c
     Write max   
     ```      
-10. Se citeste latura l (numar natural nenul) a unui patrat.
+12. Se citeste latura l (numar natural nenul) a unui patrat.
 Sa se calculeze diagonala si aria sa.
-11. Se citesc a, b, c numere naturale, reprezentand lungimile
+13. Se citesc a, b, c numere naturale, reprezentand lungimile
 laturilor unui triunghi. Calculati aria sa.
 ```
 Read a, b, c
@@ -52,4 +56,41 @@ p <-- (a + b + c) / 2
 Area <-- Radical(p * (p - a) (p - b) (p - c))
 Write Area
 ```
-12. Sa se verifice ca punctele din plan A (ax, ay), B (bx, by) and C(xc,yc) sunt coliniare.
+14. Sa se verifice ca punctele din plan A (ax, ay), B (bx, by) and C(xc,yc) sunt coliniare.
+
+15. Se citesc N numere naturale nenule. Sa se determine in cate
+zerori se termina produsul lor fara a efectua inmultirea.
+
+```py
+def zero():
+
+    # How many numbers
+    N = int(input("N = "))
+
+    x = 0
+    y = 0
+
+    for i in range(N):
+
+        two = 0
+        five = 0
+
+        num = int(input("num = "))
+
+        while num % 2 == 0:
+              two += 1
+              num /= 2
+
+        while num % 5 == 0:
+              five += 1
+              num /= 5
+
+        x += two
+        y += five
+
+    if x < y:
+       print(x, " Zeros")
+    else:
+       print(y, " Zeros")
+zero()
+```
