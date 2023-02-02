@@ -94,3 +94,61 @@ def zero():
        print(y, " Zeros")
 zero()
 ```
+
+
+```c++
+#include <stdio.h>
+
+//main function
+int main(int argc, char const *argv[]) {
+
+  //define the input variables
+  int N,
+      num,
+      x,
+      y,
+
+  //define the output variables
+      two,
+      five;
+
+  //print the number of the array
+  printf("N = ");
+  //read it
+  scanf("%d", &N);
+
+  x = 0;
+  y = 0;
+
+  //loop through the array of the integers
+  for(int i = 0 ; i < N; ++i) {
+
+       printf("num = ");
+       scanf("%d", &num);
+
+        two = 0;
+        five = 0;
+
+       while(num % 2 == 0) {
+            two += 1;
+            num /= 2;
+       }
+
+       while(num % 5 == 0) {
+            five += 1;
+            num /= 5;
+       }
+
+       x += two;
+       y += five;
+  }
+
+  if(x < y)
+    printf("%d zeros",x);
+  else
+    printf("%d zeros",x);
+
+  return 0;
+}
+
+```
