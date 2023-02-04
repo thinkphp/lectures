@@ -58,8 +58,62 @@ Write Area
 ```
 14. Sa se verifice ca punctele din plan A (ax, ay), B (bx, by) and C(xc,yc) sunt coliniare.
 
-15. Se citesc N numere naturale nenule. Sa se determine in cate
-zerori se termina produsul lor fara a efectua inmultirea.
+15. Sa se calculeze a^n, unde a este un numar real si n este un numar intreg.
+
+```py
+# Let's compute a^n
+#
+# by Adrian
+def module(a):
+    if a < 0:
+        return -(a)
+    else:
+        return a
+def main():
+
+    # let's assume we have a float number
+    a = float(input("a = "))
+    # let's assume we have an integer number
+    n = int(input("n = "))
+
+    r = 1
+
+    if n < 0:
+        n = module(n)
+        for i in range(1 , n + 1):
+            r = r * 1 / a
+    else:
+        for i in range(1, n+1):
+            r = r * a
+
+    print( r )
+
+main()
+```
+
+16. Se citeste un numar natural n. Sa se afiseze divizorii sai si numarul lor.
+
+```py
+def main():
+
+    N = int(input("N = "))
+
+    count = 0
+
+    for i in range(1, N + 1):
+
+        if N % i == 0:
+
+            print(i)
+
+            count += 1
+    print("We have ", count, " divisor!")
+
+main()
+
+```
+
+17. Se citesc N numere naturale nenule. Sa se determine in cate zerori se termina produsul lor fara a efectua inmultirea.
 
 ```py
 def zero():
