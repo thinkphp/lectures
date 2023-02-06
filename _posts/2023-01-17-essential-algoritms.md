@@ -91,7 +91,8 @@ def main():
 main()
 ```
 
-16. Se citeste un numar natural n. Sa se afiseze divizorii sai si numarul lor.
+16) Se citeste un numar natural n. Sa se afiseze divizorii sai si numarul lor.
+
 
 ```py
 def main():
@@ -113,7 +114,7 @@ main()
 
 ```
 
-17. Se citesc N numere naturale nenule. Sa se determine in cate zerori se termina produsul lor fara a efectua inmultirea.
+17) Se citesc N numere naturale nenule. Sa se determine in cate zerori se termina produsul lor fara a efectua inmultirea.
 
 ```py
 def zero():
@@ -205,4 +206,45 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
+```
+
+18) Sa se calculeze sumele urmatoare, unde x este un numar real si n un numar natural nenul.
+
+E1 = x + x^2 + x^3 + x^4 + ... + x^n
+
+```py
+def main():
+
+    x = float(input("x = "))
+    n = int(input("n = "))
+
+    p = 1
+    s = 0
+
+    for i in range(1,n+1):
+        p *= x
+        s += p
+
+    print(s)
+
+main()
+```
+E2 = x + 2 * x^2 + 3 * x^3 + 4 * x^4 + ... + n * x^n
+
+```py
+def main():
+
+    x = float(input("x = "))
+    n = int(input("n = "))
+
+    p = 1
+    s = 0
+
+    for i in range(1,n+1):
+        p *= x
+        s = s + i * p
+
+    print(s)
+
+main()
 ```
