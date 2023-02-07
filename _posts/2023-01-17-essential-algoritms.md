@@ -248,3 +248,27 @@ def main():
 
 main()
 ```
+19) Se citeste un numar natural nenul N. Sa se numere divizorii sai inclusiv 1 si el insusi.
+
+20) Se citeste un numar natural n. Sa se verifice daca el este prim.
+
+21) Se citeste un numar natural n. Sa se afiseze divisorii sai proprii si primi.
+
+```py
+import math
+def main():
+    n = 150
+    for j in range(2, n):
+      if n % j == 0:
+        print("Divisor:", j)
+        prime = True
+        N = int(math.sqrt(j)) + 1
+        for i in range(2, N):
+            if j % i == 0:
+               prime = False
+               break
+        if prime is True:
+            print("prime:", j)
+
+main()
+```
