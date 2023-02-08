@@ -252,6 +252,61 @@ main()
 
 20) Se citeste un numar natural n. Sa se verifice daca el este prim.
 
+```c++
+//we need to compile this file as following: gcc main.c -o r -lm
+#include <stdio.h>
+#include <math.h>
+
+int is_Prime(int n) {
+
+    double result = sqrt((double)n);
+
+    int N = (int)result;
+
+    for(int i = 2; i <= N; ++i) {
+
+        if(n % i == 0) {
+
+          return 0;
+        }
+    }
+
+    return 1;
+}
+
+int isPrime(int n) {
+
+    int i, prime;
+    i = 2;
+    prime = 1;
+
+    while(i * i <= n && prime) {
+      prime = n % i != 0;
+      i += 1;
+    }
+    return prime;
+}
+
+int main(int argc, char const *argv[]) {
+
+ for(int n = 2; n <= 20; n++)
+
+  if (is_Prime(n)) {
+
+    printf("%d is prime!\n", n);
+
+  } else {
+
+    printf("%d is not prime!\n", n);
+  }
+
+  return 0;
+
+}
+
+
+```
+
 21) Se citeste un numar natural n. Sa se afiseze divisorii sai proprii si primi.
 
 ```py
