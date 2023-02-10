@@ -327,3 +327,51 @@ def main():
 
 main()
 ```
+
+22. Compute LCM(a, b)
+
+```py
+# lcm.py
+# This program computes the lowest common multiple of two positive numbers
+# @ by Adrian
+#
+def gcd(a, b):
+    while a != b:
+      if a > b:
+         a = a - b
+      else:
+         b = b - a
+    return a
+
+def euclid(a, b):
+    while b != 0:
+        r = a % b
+        a = b
+        b = r
+    return a
+
+# method 1
+def lcm(a, b):
+    if a > b:
+        greater = a
+    else:
+        greater = b
+    while True:
+        if greater % a == 0 and greater % b == 0:
+            break
+        greater += 1
+    return greater
+
+# method 2
+def lcm2(a, b):
+    return (a * b) // euclid(a, b)
+
+def func():
+    a = 12
+    b = 14
+    r = lcm2(a, b)
+    print("LCM(%d, %d) = %d" % (a, b, r))
+
+func()
+
+```
