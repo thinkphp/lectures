@@ -375,3 +375,67 @@ def func():
 func()
 
 ```
+
+23) C(n,k) n choose k
+
+```py
+# https://www.cuemath.com/n-choose-k-formula/
+# https://webpages.charlotte.edu/ghetyei/courses/old/S19.3166/pcv.pdf
+
+def init():
+    st[level] = st[level-1]
+
+def sol():
+    return level == k
+
+def succ():
+    if st[level] < n - k + level:
+        st[level] += 1
+        return True
+    return False
+
+def printf():
+    out = ""
+    for i in range(1, k + 1):
+        out += str(st[i]) + " "
+    print(out)
+
+def valid():
+
+    return True
+
+def bk():
+    global level
+    level = 1
+    init()
+
+    while level > 0:
+
+        next = True
+        val = False
+
+        while next is True and val is False:
+            next = succ()
+            if next is True:
+                val = valid()
+        if next is True:
+            if sol() is True:
+                printf()
+            else:
+                level += 1
+                init()
+        else:
+            level -= 1
+
+
+def func():
+    global n, k, st
+    n = 4
+    k = 2
+    st = [0] * (n + 1)
+    bk()
+func()
+
+```
+
+24) A(n,k)
