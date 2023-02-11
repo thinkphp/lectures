@@ -328,7 +328,7 @@ def main():
 main()
 ```
 
-22. Compute LCM(a, b)
+22) Compute LCM(a, b)
 
 ```py
 # lcm.py
@@ -439,3 +439,75 @@ func()
 ```
 
 24) A(n,k)
+
+25) Permutation n!
+```py
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact(n-1)
+def init():
+    st[level] = 0
+
+def succ():
+    if st[level] < n:
+        st[level] += 1
+        return True
+    else:
+        return False
+
+def valid():
+    for i in range(1, level):
+        if st[level] == st[i]:
+            return False
+    return True
+
+def sol():
+    return level == n
+
+def printf():
+
+    output = ""
+
+    for i in range(1, n+1):
+
+        output += str(st[i]) + " "
+
+    print(output)
+
+def bk():
+
+    global level
+    level = 1
+    init()
+
+    while level > 0:
+
+        next = True
+        Valid = False
+
+        while next is True and Valid is False:
+            next = succ()
+            if next is True:
+               Valid = valid()
+
+        if next is True:
+            if sol() is True:
+                printf()
+            else:
+                #increase the level with 1 unit
+                level += 1
+                init()
+        else:
+            #decrease the level
+            level -= 1
+def main():
+    global n, st
+    n = 4   
+    st = [0] * (n+1)
+    bk()
+    print(fact(n))
+main()
+
+```
