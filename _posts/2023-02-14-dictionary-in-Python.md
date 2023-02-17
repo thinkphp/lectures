@@ -34,14 +34,14 @@ dict["Chile"] = "Santiago"
 ### Access Items
 
 You can access the items of a dictionary by referring to its key name, inside square brackets:
+
+```
 print(dict["Philippines"])
 print(dict.get("Philippines")
-# get keys
 print(dict.keys())
-# get values
 print(dict.values())
-# get items
 print(dict.items())
+```
 
 ### Loop dictionary
 
