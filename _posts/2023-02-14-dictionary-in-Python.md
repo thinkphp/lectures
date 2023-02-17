@@ -62,8 +62,11 @@ for x,y in dict.item():
     print(x,y)    
 ```    
 ### Add Items
+Adding an item to the dictionary is done by using a new index key and assigning a value to it:
 
 ```python
+dict = {}
+dict["Chile"] = "Santiago"
 ```
 
 ### Update Items
@@ -81,8 +84,42 @@ dict.update({"Chile": "Manila"})
 ```
 
 ### Remove Items
+The pop() method removes the item with the specified key name:
+
 ```python
+thisdict = {
+  "Philippines": "Manila",
+  "Argentina": "Buenos Aires",
+  "Chile": "Santiago"
+}
+thisdict.pop("Philippines")
+print(thisdict)
 ```
+
+The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+
+```python
+thisdict = {
+  "Philippines": "Manila",
+  "Argentina": "Buenos Aires",
+  "Chile": "Santiago"
+}
+thisdict.popitem()
+print(thisdict)
+```
+
+The del keyword removes the item with the specified key name:
+
+```python
+thisdict = {
+  "Philippines": "Manila",
+  "Argentina": "Buenos Aires",
+  "Chile": "Santiago"
+}
+del thisdict["Chile"]
+print(thisdict)
+```
+
 
 ### Built-in Dictionary Methods
 ```python
