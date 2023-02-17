@@ -18,3 +18,50 @@ dict = {
 }
 print(dict)
 ```
+
+### Building a Dictionary Incrementally
+
+```
+dict = {}
+print(type(dict))
+<class 'dict'>
+dict["Venezuela"] = "Caracas"
+dict["Philippines"] = "Manila"
+dict["Argentina"] = "Buenos Aires"
+dict["Chile"] = "Santiago"
+```
+
+### Access Items
+
+You can access the items of a dictionary by referring to its key name, inside square brackets:
+print(dict["Philippines"])
+print(dict.get("Philippines")
+# get keys
+print(dict.keys())
+# get values
+print(dict.values())
+# get items
+print(dict.items())
+
+### Loop dictionary
+
+```
+for x in dict:
+    print(x)
+
+for x in dict:
+    print(dict[x])
+
+for x in dict.values():
+    print(x)
+
+for x in dict.keys():
+    print(x)
+
+for x,y in dict.item():
+    print(x,y)    
+```    
+
+
+
+### Built-in Dictionary Methods
