@@ -511,3 +511,35 @@ def main():
 main()
 
 ```
+26) Sa se verifice daca doua drepte sunt paralele. Se
+considera ca prima dreapta trece prin punctele A si B, iar cea de-a doua dreapta trece prin punctele C si D.
+
+input: A(3,7), B(3,2); C(5,6); D(5,1)
+output: Dreptele sunt paralele
+
+input: A(4,4), B(11,11); C(9,4); D(14,9)
+output: Dreptele sunt paralele pentru ca au pante egale.
+
+27) Ecuatia carteziana a unei drepte este: ax+by+c=0.
+Sa se determine coeficientii a, b si c ai dreptei, stiind
+doua puncte M1(x1,y1) si M2(x2,y2) care determina dreapta.
+
+Input: M(13, 5) N(7,17).
+Output: a = -12, b = -6 and c = 186;
+
+28) Sa se defineasca o functie logica pentru verificarea
+coliniaritatii a trei puncte date si apoi sa se apeleze
+functia definita in cadrul unui program.
+
+Input: A(4,4) B(1,1,) C(7,7).
+Output: punctele sunt coliniare.
+
+29) Distanta de la un punct la o dreapta. Se dau o dreapta precizata prin punctele a doua puncte si un punct. Sa se defineasca o functie care furnizeaza distanta de la punct la dreapta.
+
+input: A(11,11) B(4,4) Pc(2,12)
+output: dist(p,d) = 7.07
+
+30) Sa se defineasca o functie care furnizeaza aria unui triunghi precizat prin coordonatele varfurilor sale.
+
+Input: A(2,2) B(2,8) C(13,2)
+Output: 33
