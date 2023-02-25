@@ -531,6 +531,40 @@ Output: a = -12, b = -6 and c = 186;
 coliniaritatii a trei puncte date si apoi sa se apeleze
 functia definita in cadrul unui program.
 
+```python
+def module(n):
+    if n < 0:
+        return -n
+    else:
+        return n
+
+class Point():
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+def computeArea(A,B,C):
+    area = A.x*(B.y-C.y) + B.x *(C.y - A.y) + C.x*(A.y - B.y)
+    area = module(area)/2
+    return area
+def func():
+    A = Point(2,2)
+    B = Point(2,8)
+    C = Point(13,2)
+
+    X = Point(-1,-1)
+    Y = Point(1,1)
+    Z = Point(3,3)
+    area = computeArea(A,B,C)
+    area2 = computeArea(X,Y,Z)
+
+    if area == 0.0:
+        print("The points are collinears.")
+    else:
+        print("The points are not collinears.")
+func()
+```
+
 Input: A(4,4) B(1,1,) C(7,7).
 Output: punctele sunt coliniare.
 
@@ -539,7 +573,107 @@ Output: punctele sunt coliniare.
 input: A(11,11) B(4,4) Pc(2,12)
 output: dist(p,d) = 7.07
 
+```c++
+#include <stdio.h>
+
+typedef struct point {
+
+    float x,  //abscise
+          y;  //ordonate
+} Point;
+
+Point A, B, //line
+P;//point
+//coefs
+float a, b, c;
+
+float module(float n) {
+      if(n<0){
+        return -n;
+      } else{
+        return n;
+      }
+}
+
+float sqrt2(float n) {
+      float x = n,
+            y = 1,
+            e = 0.000001;
+      while(x - y > e) {
+        x = (x + y) / 2;
+        y = n / x;
+      }
+      return x;
+}
+
+float computeCoefs(void) {
+
+   a = A.y - B.y;
+   b = B.x - A.x;
+   c = (B.x * A.y) - (A.x * B.y);
+}
+
+void readPoint(Point*a) {
+
+     printf("Abs=");
+     scanf("%f", &a->x);
+     printf("Ord=");
+     scanf("%f", &a->y);
+}
+
+float distance(void) {
+
+  return module((a*P.x+b*P.y+c)/sqrt2(a*a+b*b));
+}
+
+int main(int argc, char const *argv[]) {
+
+  readPoint(&A);
+  readPoint(&B);
+  readPoint(&P);
+  printf("A(%.2f,%.2f)\n",A.x,A.y);
+  printf("B(%.2f,%.2f)\n",B.x,B.y);
+  printf("Point(%.2f,%.2f)\n",P.x,P.y);
+  computeCoefs();
+  printf("a=%.2f b=%.2f c=%.2f\n", a, b, c);
+  float dist = distance();
+  printf("d(line, Point) = %.2f", dist);
+  return 0;
+}
+
+```
+
 30) Sa se defineasca o functie care furnizeaza aria unui triunghi precizat prin coordonatele varfurilor sale.
 
 Input: A(2,2) B(2,8) C(13,2)
 Output: 33
+
+```python
+def module(n):
+    if n < 0:
+        return -n
+    else:
+        return n
+
+class Point():
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+def computeArea(A,B,C):
+    area = A.x*(B.y-C.y) + B.x *(C.y - A.y) + C.x*(A.y - B.y)
+    area = module(area)/2
+    return area
+def func():
+    A = Point(2,2)
+    B = Point(2,8)
+    C = Point(13,2)
+    X = Point(-1,-1)
+    Y = Point(1,1)
+    Z = Point(3,3)
+    area = computeArea(A,B,C)
+    area2 = computeArea(X,Y,Z)
+    print(area)
+    print(area2)
+func()
+```
