@@ -569,6 +569,34 @@ doua puncte M1(x1,y1) si M2(x2,y2) care determina dreapta.
 Input: M(13, 5) N(7,17).
 Output: a = -12, b = -6 and c = 186;
 
+```python
+class Point:
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+def computeCoefs(A, B):
+
+    global a, b, c
+    a = A.y - B.y
+    b = B.x - A.x
+    c = (B.x * A.y) - (A.x * B.y)
+
+def func():
+    global a, b, c
+
+    A = Point(13, 5)
+    B = Point(7, 17)
+
+    computeCoefs(A, B)
+
+    print("a=%.2f\nb=%.3f\nc=%.3f;"%(a, b, c))
+    print("Equation Line: %.2f x + %.2f y + %.2f = 0;"%(a, b, c))
+
+func()
+```
+
 28) Sa se defineasca o functie logica pentru verificarea
 coliniaritatii a trei puncte date si apoi sa se apeleze
 functia definita in cadrul unui program.
