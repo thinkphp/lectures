@@ -561,81 +561,75 @@ func()
 22) Color Map
 
 ```python
-def coloring(i, j, color):
 
-    global matrix
+def init():
+    stack[level] = 1
 
-    if i >= 0 and j >= 0 and i < n and j < m and 1 == matrix[i][j]:
+def succ():
+    if stack[level]<4:
+        stack[level]+=1
+        return True
+    return False
 
-        matrix[i][j] = color
+def valid():
+    for i in range(level):
+        if stack[level] == stack[i] and matrix[i][level] == 1:
+            return False
+    return True
 
-        coloring(i, j + 1, color)
-        coloring(i, j - 1, color)
-        coloring(i + 1, j, color)
-        coloring(i - 1, j, color)
+def sol():
+    return level == nodes
+
+def printf():
+    for i in range(1,nodes+1):
+        print(stack[i], end = " ")
+    print()
+
+def bk():
+    global level
+    level = 2
+
+    while level > 0:
+       h = True
+       v = False
+       while h is True and v is False:
+             h = succ()
+             if h is True:
+                 v = valid()
+       if h is True:
+           if sol() is True:
+               printf()
+           else:
+               level+=1
+               init()
+       else:
+            level-=1
+
+
+def displayGraph():
+    for i in range(nodes):
+        for j in range(nodes):
+            print(matrix[i][j], end = " ")
+        print()
 
 def func():
+    global stack,nodes, edges, matrix
+    nodes = 5
+    edges = 8
+    data = [ [1,2],[1,4],[2,3],[2,5],[3,1],[3,5],[4,5] ]
+    matrix = [[0 for i in range(nodes+1)] for j in range(nodes+1)]
+    stack = [0] * (nodes+10)
 
- global matrix, n, m
-
- filepath = "colorphoto.in"
-
- with open(filepath) as fp:
-
-   lines = fp.readlines()
-
-   content = [x.strip() for x in lines]
-
- lineCol = content[0].split(" ")
-
- n = int(lineCol[0])
-
- m = int(lineCol[1])
-
- content.pop(0)
-
- matrix = []
-
- for element in content:
-
-     line = element.split(" ")
-     line = [int(x) for x in line]
-     matrix.append(line)
-
- for i in range(0, n):
-
-     for j in range(0, m):
-
-         print(matrix[i][j], end = " ")
-
-     print(end = "\n")
-
- global color
-
- color = 2
-
- for i in range(0, n):
-
-     for j in range(0, m):
-
-         if matrix[i][j] == 1:
-
-             coloring(i, j, color)
-
-             color+=1
-
- print("\n")
-
- for i in range(0, n):
-
-    for j in range(0, m):
-
-        print(matrix[i][j], end = " ")
-
-    print(end = "\n")
-
+    for edges in data:
+        x, y = edges[0], edges[1]
+        matrix[x][y] = 1
+        matrix[y][x] = 1
+    displayGraph()
+    stack[1] = 1
+    bk()
 func()
 ```
+source: https://ideone.com/uc1KPA
 
 23) C(n,k) n choose k
 
