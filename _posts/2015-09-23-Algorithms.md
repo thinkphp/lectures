@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: algorithms
+title: Algorithms
 ---
 
 Algorithms
@@ -21,6 +21,3 @@ Algorithms
 * Applications.
 * Introducing to Computing Cloud.
 * Players: Google Cloud Computing, Azure, RacketSpace, EC2 Amazon, IBM
-
-
-

@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Structura repetitiva
+title: Repetition Structure
 ---
 
 
