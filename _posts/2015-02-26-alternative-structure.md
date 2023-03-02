@@ -80,3 +80,68 @@ In C++ programming language
 
 ```python
 ```
+
+```c++
+#include <stdio.h>
+
+typedef struct circle {
+        float x,
+              y,
+              R;
+} Circle;
+
+float module(float x) {
+      if(x < 0) {
+        return -x;
+      } else return x;
+}
+float sqrt2(float n) {
+      float x = n,
+            y = 1,
+            e = 0.000001;
+      while(x - y > e){
+            x = (x + y) / 2;
+            y = n / x;
+      }
+      return x;
+}
+void read(Circle *c) {
+     printf("abs = ");
+     scanf("%f",&c->x);
+     printf("ord = ");
+     scanf("%f",&c->y);
+     printf("R = ");
+     scanf("%f",&c->R);
+}
+
+float computeDistance(Circle c1, Circle c2) {
+
+      return sqrt2((c2.y - c1.y) * (c2.y - c1.y) + (c2.x - c1.x) * (c2.x - c1.x));
+}
+
+int main(int argc, char const *argv[]) {
+
+  Circle c1,c2;
+  float r1,r2;
+
+  printf("Circle 1\n");
+  read(&c1);
+
+  printf("Circle 2\n");
+  read(&c2);
+
+  float distance = computeDistance(c1, c2);
+
+  if(distance == c1.R + c2.R) {
+     printf("Exterior Tangent Circles\n");
+  } else if(distance > c1.R + c2.R) {
+    printf("Exterior Circles\n");
+  } else if(distance < module(c1.R - c2.R)) {
+    printf("One Circle Interior\n");
+  } else if(distance == module(c1.R - c2.R)) {
+    printf("Interior Tangent\n");
+  }
+  return 0;
+}
+
+```
