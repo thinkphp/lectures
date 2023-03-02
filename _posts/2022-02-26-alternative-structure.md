@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Structura alternativa
+title: Alternative Structure
 ---
 Daca S1 si S2 sunt structuri si E este o conditie. Atunci:
 ```

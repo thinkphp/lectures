@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Structura secventiala
+title: Sequentially Structure
 ---
 
 Orice operatie de citire/scriere, atribuire, decizionala considerata in ansamblul ei, constituie o structura liniara.
