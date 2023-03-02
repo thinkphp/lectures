@@ -3,20 +3,16 @@ layout: post
 disqus: y
 title: Structura alternativa
 ---
-
-
-Structura alternativa se defineste astfel:
-
 Daca S1 si S2 sunt structuri si E este o conditie. Atunci:
-
+```
 Daca E atunci
 
      S1
 
   altfel
 
-     S2 
-
+     S2
+```
 
 este o structura alternativa.
 
@@ -27,18 +23,18 @@ Modul de executare este urmatorul:
 
 Forma simplificata a structurii alternative este:
 
-Daca E atunci 
+Daca E atunci
      instructiune;
 
-DAca la evaluare E returneaza true se executa instructiune, altfel se trece mai departe.
+Daca la evaluare E returneaza True se executa instructiune, altfel se trece mai departe.
 
-### Problema 1:
+## Problems:
 
-Sa se scrie un algoritm care citeste un numar natural (comanda). Daca acesta este 0 se vor citi doua numere intregi a si b
+1) Sa se scrie un algoritm care citeste un numar natural (comanda). Daca acesta este 0 se vor citi doua numere intregi a si b
 si se va afisa suma lor, contrar se vor citi doua numere reale x si y si se va afisa suma lor.
 
-in limbajul pseudocod:
-
+In pseudocode language:
+```
 intreg comanda, a, b, s1
 real x, y, s2
 Citeste comanda
@@ -52,9 +48,11 @@ Daca comanda = 0 atunci
      Citeste x, y
      s2 <-- x + y
      Scrie s2
+```
 
-in limbajul de programare c++:
+In C++ programming language
 
+```
   int comanda, a, b, s1;
   float x, y, s2;
   cin>>comanda;
@@ -67,19 +65,18 @@ in limbajul de programare c++:
         s1 = x + y;
         cout<<s2;
   }
-
-### Problema 2:
-
-Se citesc doua numere reale a si b. Sa se rezolve ecuatia de gradul 1: ax + b = 0
-
-### Problema 3:
-
-Se citesc trei numere reale a, b si c. Sa se rezolve ecuatia de gradul 2: ax^2 + bx + c = 0
- 
-
-           
+```
+2) Se citesc doua numere reale a si b. Sa se rezolve ecuatia de gradul 1: ax + b = 0
+```python
+```
 
 
+3) Se citesc trei numere reale a, b si c. Sa se rezolve ecuatia de gradul 2: ax^2 + bx + c = 0
+```python
+```
 
 
+4) Se considera doua puncte in plan, exprimate prin perechi de coordonate (x,y). Ele reprezinta centrele a doua cercuri de raza R1, respectiv R2. Sa se verifice daca cele doua cercuri sunt tangente interne, tangente externe, secante sau exterioare.
 
+```python
+```
