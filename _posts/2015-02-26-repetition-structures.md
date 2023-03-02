@@ -5,18 +5,68 @@ title: Repetition Structure
 ---
 
 
-1. Structura repetitiva conditionata anterior:
+* Structura repetitiva conditionata anterior:
 cat timp ... executa (while)
 pentru ... executa (for)
 
-2. Structura repetitiva condtionata posterior:
+* Structura repetitiva condtionata posterior:
 
 repeta ... cat timp (do..while)
 repeta ... pana cand (do...while(Not(E)))
 
 ## Problems:
 
-1. Sa se determine cel mai mare numar care se poate forma
+1) Se citeste un numar natural n, diferit de 0. Sa se afiseze suma cifrelor sale.
+```python
+
+```
+
+```c
+```
+
+
+2) Se citeste un numar natural n. Sa se afiseze numarul obtinut prin inversarea numarului citit.
+```python
+```
+```c++
+```
+
+
+3) Se citesc numerele naturale n1 si n2. Sa se calculeze produsul lor, fara a utiliza operatorul de inmultire.
+```python
+```
+```c++
+```
+
+4) Se citesc doua numere naturale n1 si n2. Se cere sa se calculese catul si restul impartirii intregi a lui n1 la n2 fara a utiliza operatorul de impartire.
+```python
+```
+```c++
+```
+
+5) Se citeste un numar natural n. Se cere sa se calculese suma primelor n numere naturale.
+input: n = 10
+output: s = 1 + 2 + 3 + 4 + ... + 10 = 5050
+```python
+```
+```c++
+```
+
+6) Sa se calculeze suma:
+0,1 + 0,2 + 0,3 + ... + 0.9
+```python
+```
+```c++
+```
+
+7) Se citeste un numar natural n. Se cere sa se calculeze suma:
+1 + 1 * 2 + 1 * 2 * 3 + 1 * 2 * 3 * 4 + ...+ 1 * 2 * 3 * 4 * ...n
+```python
+```
+```c++
+```
+
+8) Sa se determine cel mai mare numar care se poate forma
 cu ajutorul cifrelor unui numar natural citit de la tastatura.
 Input: n = 76134
 Output: m = 76431
@@ -49,7 +99,7 @@ def func():
 func()
 ```
 
-2. Sa se determine cel mai mic numar care se poate cu cifrele unui numar citit de la tastatura.
+9) Sa se determine cel mai mic numar care se poate cu cifrele unui numar citit de la tastatura.
 Input: n = 76134
 Output: m = 13467
 
