@@ -3,14 +3,11 @@ layout: post
 disqus: y
 title: Alternative Structure
 ---
-Daca S1 si S2 sunt structuri si E este o conditie. Atunci:
+Daca S1 si S2 sunt structuri si E este o conditie, atunci:
 ```
 Daca E atunci
-
      S1
-
-  altfel
-
+altfel
      S2
 ```
 
@@ -24,19 +21,43 @@ Modul de executare este urmatorul:
 
 ## Problems:
 
-1) Se considera o fractie a carei numitor este un numar prim. Sa se verifice daca este ireductibila, reductibila, subunitara sau supraunitara.
+1) Se citesc trei numere intregi a, b, c. Sa se afiseze in ordine crescatoare:
+
+```python
+def main():
+  a, b, c = 1, -2, -3
+  if a < b:
+    if c < a:
+      print(c, a, b)
+    elif c < b:
+      print(a, c, b)
+    else:
+      print(a, b, c)
+  else:
+    if c < b:
+      print(c, b, a)
+    elif c < a:
+      print(b, c, a)
+    else:
+      print(b, a, c)
+main()
+```
+```c++
+```
+
+2) Se considera o fractie a carei numitor este un numar prim. Sa se verifice daca este ireductibila, reductibila, subunitara sau supraunitara.
 ```c++
 ```
 ```python
 ```
-2) Considerand cunoscute trei valori reale, verificati daca ele pot reprezenta lungimile laturilor unui triunghi, iar in caz afirmativ determinati tipul acestuia: isoscel, echilateral, dreptunghic sau oarecare.
+3) Considerand cunoscute trei valori reale, verificati daca ele pot reprezenta lungimile laturilor unui triunghi, iar in caz afirmativ determinati tipul acestuia: isoscel, echilateral, dreptunghic sau oarecare.
 ```c++
 ```
 ```python
 ```
 
 
-3) Sa se scrie un algoritm care citeste un numar natural (comanda). Daca acesta este 0 se vor citi doua numere intregi a si b
+4) Sa se scrie un algoritm care citeste un numar natural (comanda). Daca acesta este 0 se vor citi doua numere intregi a si b
 si se va afisa suma lor, contrar se vor citi doua numere reale x si y si se va afisa suma lor.
 
 In pseudocode language:
@@ -72,17 +93,16 @@ In C++ programming language
         cout<<s2;
   }
 ```
-4) Se citesc doua numere reale a si b. Sa se rezolve ecuatia de gradul 1: ax + b = 0
+5) Se citesc doua numere reale a si b. Sa se rezolve ecuatia de gradul 1: ax + b = 0
 ```python
 ```
 
 
-5) Se citesc trei numere reale a, b si c. Sa se rezolve ecuatia de gradul 2: ax^2 + bx + c = 0
+6) Se citesc trei numere reale a, b si c. Sa se rezolve ecuatia de gradul 2: ax^2 + bx + c = 0
 ```python
 ```
 
-
-6) Se considera doua puncte in plan, exprimate prin perechi de coordonate (x,y). Ele reprezinta centrele a doua cercuri de raza R1, respectiv R2. Sa se verifice daca cele doua cercuri sunt tangente interne, tangente externe, secante sau exterioare.
+7) Se considera doua puncte in plan, exprimate prin perechi de coordonate (x,y). Ele reprezinta centrele a doua cercuri de raza R1, respectiv R2. Sa se verifice daca cele doua cercuri sunt tangente interne, tangente externe, secante sau exterioare.
 
 ```python
 def module(n):
@@ -201,14 +221,14 @@ int main(int argc, char const *argv[]) {
 
 ```
 
-7) Realizati un program care verifica daca un punct X se afla din plan se afla in interioriul unui triunghi, pe laturile acestuia sau este exterior lui. Se cunosc coordonatele punctului si coordonatele varfurilor triunghiului.
+8) Realizati un program care verifica daca un punct X se afla din plan se afla in interioriul unui triunghi, pe laturile acestuia sau este exterior lui. Se cunosc coordonatele punctului si coordonatele varfurilor triunghiului.
 
 ```python
 ```
 ```c++
 ```
 
-8) Se citesc de la intrare urmatoarele 5 numere reale: x, y, r, x0, y0 reprezentand coordonatele centrului unui cerc, raza sa si coordonatele unui punct din plan. Sa
+9) Se citesc de la intrare urmatoarele 5 numere reale: x, y, r, x0, y0 reprezentand coordonatele centrului unui cerc, raza sa si coordonatele unui punct din plan. Sa
 se scrie un program care sa decida daca punctul (x0, y0) apartine interiorului, frontierei sau exteriorului cercului C(x0,y0,r).
 
 ```python
@@ -216,9 +236,8 @@ se scrie un program care sa decida daca punctul (x0, y0) apartine interiorului, 
 ```c++
 ```
 
-9) Se considera doua triunghiuri in plan, identificate prin coordonatele varfurilor lor. Sa se realizeze un program care verifica daca cele doua triunghiuri sunt asemenea.
+10) Se considera doua triunghiuri in plan, identificate prin coordonatele varfurilor lor. Sa se realizeze un program care verifica daca cele doua triunghiuri sunt asemenea.
 ```python
 ```
 ```c++
 ```
-10) 
