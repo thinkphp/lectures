@@ -21,16 +21,22 @@ Modul de executare este urmatorul:
 - se evalueaza conditia;
 - daca aceasta este indeplinita se executa S1, altfel se executa S2
 
-Forma simplificata a structurii alternative este:
-
-Daca E atunci
-     instructiune;
-
-Daca la evaluare E returneaza True se executa instructiune, altfel se trece mai departe.
 
 ## Problems:
 
-1) Sa se scrie un algoritm care citeste un numar natural (comanda). Daca acesta este 0 se vor citi doua numere intregi a si b
+1) Se considera o fractie a carei numitor este un numar prim. Sa se verifice daca este ireductibila, reductibila, subunitara sau supraunitara.
+```c++
+```
+```python
+```
+2) Considerand cunoscute trei valori reale, verificati daca ele pot reprezenta lungimile laturilor unui triunghi, iar in caz afirmativ determinati tipul acestuia: isoscel, echilateral, dreptunghic sau oarecare.
+```c++
+```
+```python
+```
+
+
+3) Sa se scrie un algoritm care citeste un numar natural (comanda). Daca acesta este 0 se vor citi doua numere intregi a si b
 si se va afisa suma lor, contrar se vor citi doua numere reale x si y si se va afisa suma lor.
 
 In pseudocode language:
@@ -66,17 +72,17 @@ In C++ programming language
         cout<<s2;
   }
 ```
-2) Se citesc doua numere reale a si b. Sa se rezolve ecuatia de gradul 1: ax + b = 0
+4) Se citesc doua numere reale a si b. Sa se rezolve ecuatia de gradul 1: ax + b = 0
 ```python
 ```
 
 
-3) Se citesc trei numere reale a, b si c. Sa se rezolve ecuatia de gradul 2: ax^2 + bx + c = 0
+5) Se citesc trei numere reale a, b si c. Sa se rezolve ecuatia de gradul 2: ax^2 + bx + c = 0
 ```python
 ```
 
 
-4) Se considera doua puncte in plan, exprimate prin perechi de coordonate (x,y). Ele reprezinta centrele a doua cercuri de raza R1, respectiv R2. Sa se verifice daca cele doua cercuri sunt tangente interne, tangente externe, secante sau exterioare.
+6) Se considera doua puncte in plan, exprimate prin perechi de coordonate (x,y). Ele reprezinta centrele a doua cercuri de raza R1, respectiv R2. Sa se verifice daca cele doua cercuri sunt tangente interne, tangente externe, secante sau exterioare.
 
 ```python
 def module(n):
@@ -194,19 +200,25 @@ int main(int argc, char const *argv[]) {
 }
 
 ```
-5) Realizati un program care verifica daca un punct X se afla din plan se afla in interioriul unui triunghi, pe laturile acestuia sau este exterior lui. Se cunosc coordonatele punctului si coordonatele varfurilor triunghiului.
+
+7) Realizati un program care verifica daca un punct X se afla din plan se afla in interioriul unui triunghi, pe laturile acestuia sau este exterior lui. Se cunosc coordonatele punctului si coordonatele varfurilor triunghiului.
 
 ```python
 ```
-
 ```c++
 ```
 
-6) Se citesc de la intrare urmatoarele 5 numere reale: x, y, r, x0, y0 reprezentand coordonatele centrului unui cerc, raza sa si coordonatele unui punct din plan. Sa
+8) Se citesc de la intrare urmatoarele 5 numere reale: x, y, r, x0, y0 reprezentand coordonatele centrului unui cerc, raza sa si coordonatele unui punct din plan. Sa
 se scrie un program care sa decida daca punctul (x0, y0) apartine interiorului, frontierei sau exteriorului cercului C(x0,y0,r).
 
 ```python
 ```
-
 ```c++
 ```
+
+9) Se considera doua triunghiuri in plan, identificate prin coordonatele varfurilor lor. Sa se realizeze un program care verifica daca cele doua triunghiuri sunt asemenea.
+```python
+```
+```c++
+```
+10) 
