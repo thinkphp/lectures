@@ -79,6 +79,55 @@ In C++ programming language
 4) Se considera doua puncte in plan, exprimate prin perechi de coordonate (x,y). Ele reprezinta centrele a doua cercuri de raza R1, respectiv R2. Sa se verifice daca cele doua cercuri sunt tangente interne, tangente externe, secante sau exterioare.
 
 ```python
+def module(n):
+
+    if n < 0:
+        return -n
+    else:
+        return n
+
+class Circle:
+    def __init__(self,name,x,y,r):
+
+        self.x = x#abscise
+        self.y = y#ordonate
+        self.r = r#radius
+        self.name = name
+
+    def __repr__(self):
+
+        return "C%s(abs=%.2f,ord=%.2f,R%s=%.2f)"%(self.name,self.x,self.y,self.name,self.r)
+
+def sqrt(n):
+    x = n
+    y = 1.0
+    e = 0.000001
+    while x - y > e:
+        x = (x + y) / 2
+        y = n / x
+    return x
+
+def computeDistance(c1, c2):
+    return sqrt((c2.y - c1.y) * (c2.y - c1.y) + (c2.x - c1.x) * (c2.x - c1.x))
+
+def func():
+    circle1 = Circle(1,5,9,11)
+    circle2 = Circle(1,5,3,10)
+    print(circle1)
+    print(circle2)
+    dist = computeDistance(circle1, circle2)
+    print("%.3f"%dist)
+    if dist > circle1.r + circle2.r:
+        print("Exterior Circles.")
+    elif dist == circle1.r + circle2.r:
+        print("Tangent Exterior Circles.")
+    elif dist < module(circle1.r - circle2.r):
+        print("One circle is interior other one")
+    elif dist == module(circle1.r - circle2.r):
+        print("Interior tangent circles.")
+    elif dist < circle1.r + circle2.r or dist < module(circle2.r - circle1.r):
+        print("Secants")
+func()
 ```
 
 ```c++
