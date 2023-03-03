@@ -194,3 +194,19 @@ int main(int argc, char const *argv[]) {
 }
 
 ```
+5) Realizati un program care verifica daca un punct X se afla din plan se afla in interioriul unui triunghi, pe laturile acestuia sau este exterior lui. Se cunosc coordonatele punctului si coordonatele varfurilor triunghiului.
+
+```python
+```
+
+```c++
+```
+
+6) Se citesc de la intrare urmatoarele 5 numere reale: x, y, r, x0, y0 reprezentand coordonatele centrului unui cerc, raza sa si coordonatele unui punct din plan. Sa
+se scrie un program care sa decida daca punctul (x0, y0) apartine interiorului, frontierei sau exteriorului cercului C(x0,y0,r).
+
+```python
+```
+
+```c++
+```
