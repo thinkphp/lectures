@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Vector Spaces
+title: Spatii Vectoriale
 ---
 
 The notion of vector space grew up from the discovery by Descartes that points in the Euclidian plane can be represented by ordered pairs of real numbers (and points in 3-dimensional space by ordered triples). We are faced with two completely different descriptions: a point in the plane, or a pair of real numbers. Moreover, operations on vectors look quite different according to which description is used. By example, we add
