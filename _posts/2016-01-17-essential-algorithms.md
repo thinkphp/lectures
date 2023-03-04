@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: n
-title: Essentials Algorithms
+title: Essential Algorithms
 ---
 
 ### A Set of Problems which processes simple data:
