@@ -49,6 +49,23 @@ main()
 ```c++
 ```
 ```python
+
+def func():
+
+      a = int(input("a="))
+      b = int(input("b="))
+
+      if a % b == 0:
+          print("Reducible.")
+      elif a % b != 0:
+          print("Ireducible.")
+      if a > b:
+          print("Superunitary.")
+      else:
+          print("Subunit.")
+
+func()          
+
 ```
 3) Considerand cunoscute trei valori reale, verificati daca ele pot reprezenta lungimile laturilor unui triunghi, iar in caz afirmativ determinati tipul acestuia: isoscel, echilateral, dreptunghic sau oarecare.
 ```c++
