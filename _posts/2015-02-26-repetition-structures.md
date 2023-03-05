@@ -31,20 +31,36 @@ repeta ... pana cand (do...while(Not(E)))
 ```c++
 ```
 
+3) Se citeste un numar natural de cel mult 8 cifre. Sa se formeze un alt numar din cifrele situate pe pozitii impare (de la stanga la dreapta).
 
-3) Se citesc numerele naturale n1 si n2. Sa se calculeze produsul lor, fara a utiliza operatorul de inmultire.
+```python
+def func():
+    n = 123567
+    x = 0
+    while n!=0:
+        x = x * 10 + n % 10
+        n //= 10
+
+    while x!=0:
+        n = n * 10 +  x % 10
+        x //= 100
+    print(n)
+func()
+```
+
+4) Se citesc numerele naturale n1 si n2. Sa se calculeze produsul lor, fara a utiliza operatorul de inmultire.
 ```python
 ```
 ```c++
 ```
 
-4) Se citesc doua numere naturale n1 si n2. Se cere sa se calculese catul si restul impartirii intregi a lui n1 la n2 fara a utiliza operatorul de impartire.
+5) Se citesc doua numere naturale n1 si n2. Se cere sa se calculese catul si restul impartirii intregi a lui n1 la n2 fara a utiliza operatorul de impartire.
 ```python
 ```
 ```c++
 ```
 
-5) Se citeste un numar natural n. Se cere sa se calculese suma primelor n numere naturale.
+6) Se citeste un numar natural n. Se cere sa se calculese suma primelor n numere naturale.
 input: n = 10
 output: s = 1 + 2 + 3 + 4 + ... + 10 = 5050
 ```python
@@ -52,21 +68,21 @@ output: s = 1 + 2 + 3 + 4 + ... + 10 = 5050
 ```c++
 ```
 
-6) Sa se calculeze suma:
+7) Sa se calculeze suma:
 0,1 + 0,2 + 0,3 + ... + 0.9
 ```python
 ```
 ```c++
 ```
 
-7) Se citeste un numar natural n. Se cere sa se calculeze suma:
+8) Se citeste un numar natural n. Se cere sa se calculeze suma:
 1 + 1 * 2 + 1 * 2 * 3 + 1 * 2 * 3 * 4 + ...+ 1 * 2 * 3 * 4 * ...n
 ```python
 ```
 ```c++
 ```
 
-8) Sa se determine cel mai mare numar care se poate forma
+9) Sa se determine cel mai mare numar care se poate forma
 cu ajutorul cifrelor unui numar natural citit de la tastatura.
 Input: n = 76134
 Output: m = 76431
@@ -99,7 +115,7 @@ def func():
 func()
 ```
 
-9) Sa se determine cel mai mic numar care se poate cu cifrele unui numar citit de la tastatura.
+10) Sa se determine cel mai mic numar care se poate cu cifrele unui numar citit de la tastatura.
 Input: n = 76134
 Output: m = 13467
 
