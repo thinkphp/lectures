@@ -694,6 +694,90 @@ func()
 ```
 
 24) Partition of a number
+```c++
+#include <stdio.h>
+#define SIZE 100
+
+int stack[SIZE],
+    n,
+    level,
+    sum;
+
+void init() {
+    if(level == 1) {
+       stack[level] = 0;
+    } else {
+       stack[level] = stack[level-1] - 1;
+    }
+}
+
+int succ() {
+
+    if(stack[level] < n - sum) {
+       stack[level]+=1;
+       return 1;
+    }
+    else{
+    sum -= stack[level-1];
+    return 0;
+    }
+}
+
+int sol() {
+    return sum == n;
+}
+
+void print() {
+    for(int i = 1; i <= level;++i) {
+        printf("%d ", stack[i]);
+    }
+    printf("\n");
+    sum = sum - stack[level];
+}
+
+int valid() {
+   if(stack[level] <= n - sum) {
+      sum = sum + stack[level];
+      return 1;
+   }
+   return 0;
+}
+
+void solve() {
+   level = 1;
+   init();
+
+   while(level>0) {
+     int su, va;
+     su = 1;
+     va = 0;
+     while(su && !va) {
+           su = succ();
+           if(su) {
+             va = valid();
+           }
+     }
+     if(su) {
+       if(sol()) print();
+       else  {
+         level+=1;
+         init();
+       }
+     } else
+       level--;
+   }
+}
+
+int main(int argc, char const *argv[]) {
+
+  n = 5;
+  solve();
+
+  return 0;
+}
+
+```
+
 ```python
 def func():
     global s, n
@@ -756,6 +840,84 @@ def func():
 
 func()
 ```
+
+```ruby
+def func
+
+    def init
+      if $level == 1
+        $stack[$level] = 0
+      else
+        $stack[$level] = $stack[$level-1]-1
+      end
+    end
+
+    def succ()
+        if $stack[$level] < $n - $s
+           $stack[$level] += 1
+           return true
+        else
+           $s = $s - $stack[$level-1]
+           return false
+        end
+    end
+
+    def valid
+        if $stack[$level] <= $n - $s
+           $s = $s + $stack[$level]
+           return true
+        end
+        return false
+    end
+
+    def sol
+        return $s == $n
+    end
+
+    def printf
+      for i in 1..$level
+        print $stack[i], ' '
+      end
+      $s = $s - $stack[$level]
+      print "\n"
+    end
+
+    def solve
+      $s = 0
+      $level = 1
+      init()
+
+      while $level > 0
+            su = true
+            v = false
+            while su == true && v == false
+                  su = succ()
+                  if su == true
+                    v = valid()
+                  end
+                  if su == true
+                    if sol() == true
+                       printf()
+                    else
+                      $level = $level + 1
+                      init()
+                    end
+                  else
+                    $level = $level - 1
+                  end
+            end
+      end
+    end
+
+    $n = 5
+    $stack = [0] * ($n+1)
+    solve
+end
+
+func
+
+```
+
 Demos: https://ideone.com/mTFfYg
 
 25) Permutation n!
