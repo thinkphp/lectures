@@ -694,6 +694,8 @@ func()
 ```
 
 24) Partition of a number
+
+C Language
 ```c++
 #include <stdio.h>
 #define SIZE 100
@@ -777,7 +779,7 @@ int main(int argc, char const *argv[]) {
 }
 
 ```
-
+Python Language
 ```python
 def func():
     global s, n
@@ -840,7 +842,7 @@ def func():
 
 func()
 ```
-
+Ruby Language
 ```ruby
 def func
 
@@ -921,6 +923,142 @@ func
 Demos: https://ideone.com/mTFfYg
 
 25) Permutation n!
+
+```python
+class Solution:
+
+    def find_permutation(self, S):
+
+         L = list( S )
+
+         out = [ ]
+
+         n = len( L )
+
+         out = []
+
+         L.insert(0,0)
+
+         stack = [ 0 ] * ( n + 1 )
+
+         def sort(arr):
+
+             n = len(arr)
+             for i in range(1, n):
+                 aux = arr[i]
+                 j = i - 1
+                 while j>=0 and aux < arr[j]:
+                     arr[j+1] = arr[j]
+                     j-=1
+                 arr[j+1] = aux
+
+         def solution():
+
+             string = ""
+
+             for i in range(1, n + 1):
+
+                   string += L[stack[i]]
+
+             out.append(string)
+
+
+         def ok(level):
+
+            for i in range(1, level):
+
+                 if stack[i] == stack[level]:
+
+                     return False
+
+            return True
+
+         def solve(level):
+
+             if level > n:
+
+                 solution()
+
+             else:
+
+                 for i in range(1, n+1):
+
+                     stack[level] = i
+
+                     if ok(level) is True:
+
+                         solve(level+1)
+         solve(1)
+         out = [*set(out)]
+         sort(out)
+         return out
+
+ob = Solution()
+
+for i in ob.find_permutation("ABC"):
+
+    print(i, end = " ")
+
+```
+
+```c++
+#include <stdio.h>
+#define DIM 100
+
+int stack[DIM],
+    n;
+
+int valid(int level) {
+
+    for(int i = 1; i < level; i++) {
+
+      if(stack[i] == stack[level]) {
+
+        return 0;
+      }
+    }
+    return 1;
+}
+
+void display_solution() {
+
+      for(int i = 1; i <= n; ++i) {
+
+          printf("%d ", stack[i]);
+
+      }
+      printf("\n");
+}
+
+void solve(int level) {
+
+     if(level > n) {
+
+        display_solution();
+
+     } else {
+
+       for(int i = 1; i <= n; ++i) {
+
+           stack[ level ] = i;
+
+           if(valid( level ))
+
+              solve( level + 1 );
+       }
+     }
+}
+
+int main(int argc, char const *argv[]) {
+
+  n = 5;
+
+  solve( 1 );
+
+  return 0;
+}
+```
+
 ```py
 def fact(n):
     if n == 0:
