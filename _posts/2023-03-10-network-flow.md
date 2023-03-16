@@ -17,7 +17,7 @@ Fie G = (V, E) un graf orientat. Se numeste retea de transport ansamblul R = (G,
 
 Mai jos puteti observa o retea de transport in care st este nodul 1, fin este nodul 7, iar valorile diferite de 0 ale functiei c sunt trecute pe arcuri:
 
-![image]( {{site.baseurl}}{{ site.imageurl }}network-flow.png)
+![image]( {{site.baseurl}}{{ site.imageurl }}/network-flow.png)
 
 Semnificatie:
 
