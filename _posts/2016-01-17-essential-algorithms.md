@@ -1278,6 +1278,7 @@ def main():
     bk()
     print(fact(n))
 main()
+```
 
 26) Subsets of a set
 ```py
