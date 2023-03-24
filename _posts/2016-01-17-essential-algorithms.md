@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: n
-title: Essentials Algorithms
+title: Essential Algorithms
 ---
 
 ### A Set of Problems which processes simple data:
@@ -558,6 +558,140 @@ def func():
 func()
 ```
 
+22) Color Map
+
+```python
+
+def init():
+    stack[level] = 1
+
+def succ():
+    if stack[level]<4:
+        stack[level]+=1
+        return True
+    return False
+
+def valid():
+    for i in range(level):
+        if stack[level] == stack[i] and matrix[i][level] == 1:
+            return False
+    return True
+
+def sol():
+    return level == nodes
+
+def printf():
+    for i in range(1,nodes+1):
+        print(stack[i], end = " ")
+    print()
+
+def bk():
+    global level
+    level = 2
+
+    while level > 0:
+       h = True
+       v = False
+       while h is True and v is False:
+             h = succ()
+             if h is True:
+                 v = valid()
+       if h is True:
+           if sol() is True:
+               printf()
+           else:
+               level+=1
+               init()
+       else:
+            level-=1
+
+
+def displayGraph():
+    for i in range(nodes):
+        for j in range(nodes):
+            print(matrix[i][j], end = " ")
+        print()
+
+def func():
+    global stack,nodes, edges, matrix
+    nodes = 5
+    edges = 8
+    data = [ [1,2],[1,4],[2,3],[2,5],[3,1],[3,5],[4,5] ]
+    matrix = [[0 for i in range(nodes+1)] for j in range(nodes+1)]
+    stack = [0] * (nodes+10)
+
+    for edges in data:
+        x, y = edges[0], edges[1]
+        matrix[x][y] = 1
+        matrix[y][x] = 1
+    displayGraph()
+    stack[1] = 1
+    bk()
+func()
+```
+source: https://ideone.com/uc1KPA
+
+23) A(n,k)
+
+```c++
+#include <stdio.h>
+#define DIM 100
+
+int stack[DIM],
+    n,k;
+
+int valid(int level) {
+
+    for(int i = 1; i < level; i++) {
+
+      if(stack[i] == stack[level]) {
+
+        return 0;
+      }
+    }
+    return 1;
+}
+
+void display_solution() {
+
+      for(int i = 1; i <= k; ++i) {
+
+          printf("%d ", stack[i]);
+
+      }
+      printf("\n");
+}
+
+void solve(int level) {
+
+     if(level > k) {
+
+        display_solution();
+
+     } else {
+
+       for(int i = 1; i <= n; ++i) {
+
+           stack[ level ] = i;
+
+           if(valid( level ))
+
+              solve( level + 1 );
+       }
+     }
+}
+
+int main(int argc, char const *argv[]) {
+
+  n = 4;
+  k = 2;
+
+  solve( 1 );
+
+  return 0;
+}
+```
+
 23) C(n,k) n choose k
 
 ```py
@@ -620,9 +754,462 @@ func()
 
 ```
 
-24) A(n,k)
+24) Partition of a number
+
+C Language
+```c++
+#include <stdio.h>
+#define SIZE 100
+
+int stack[SIZE],
+    n,
+    level,
+    sum;
+
+void init() {
+    if(level == 1) {
+       stack[level] = 0;
+    } else {
+       stack[level] = stack[level-1] - 1;
+    }
+}
+
+int succ() {
+
+    if(stack[level] < n - sum) {
+       stack[level]+=1;
+       return 1;
+    }
+    else{
+    sum -= stack[level-1];
+    return 0;
+    }
+}
+
+int sol() {
+    return sum == n;
+}
+
+void print() {
+    for(int i = 1; i <= level;++i) {
+        printf("%d ", stack[i]);
+    }
+    printf("\n");
+    sum = sum - stack[level];
+}
+
+int valid() {
+   if(stack[level] <= n - sum) {
+      sum = sum + stack[level];
+      return 1;
+   }
+   return 0;
+}
+
+void solve() {
+   level = 1;
+   init();
+
+   while(level>0) {
+     int su, va;
+     su = 1;
+     va = 0;
+     while(su && !va) {
+           su = succ();
+           if(su) {
+             va = valid();
+           }
+     }
+     if(su) {
+       if(sol()) print();
+       else  {
+         level+=1;
+         init();
+       }
+     } else
+       level--;
+   }
+}
+
+int main(int argc, char const *argv[]) {
+
+  n = 5;
+  solve();
+
+  return 0;
+}
+
+Python Language
+```python
+def partition():
+    global n, sum, stack
+    sum = 0
+    n = int(input("n="))
+    stack = [0]*(n+1)
+
+    def init(level):
+        if level == 1:
+            stack[level] = 0
+        else:
+            stack[level] = stack[level-1] - 1
+    def succ(level) -> bool:
+
+        global sum
+        if stack[level] < n - sum:
+            stack[level] +=1
+            return True
+        else:
+            sum -= stack[level-1]
+            return False
+
+    def valid(level) -> bool:
+        global sum
+        if stack[level] <= n - sum:
+            sum += stack[level]
+            return True
+        return False
+
+    def sol(level) -> bool:
+        return sum == n
+
+    def printf(level):
+        global sum
+        for i in range(1, level+1):
+            print(stack[i], end = " ")
+        print()
+        sum -= stack[level]
+
+    def solve(level):
+        init(level)
+        while succ(level) is True:
+            if valid(level) == True:
+                if sol(level) == True:
+                    printf(level)
+                else:
+                    solve(level+1)
+    solve(1)
+partition()
+```
+
+```python
+def func():
+    global s, n
+    def init():
+        if level == 1:
+            stack[level] = 0
+        else:
+            stack[level] = stack[level-1]-1
+
+    def succ():
+        global s
+        if stack[level] < (n - s):
+            stack[level] += 1
+            return True
+        else:
+            s = s - stack[level-1]
+            return False
+
+    def valid():
+        global s
+        if stack[level] <= n - s:
+            s = s + stack[level]
+            return True
+        return False
+
+    def printf():
+        global s
+        for i in range(1, level+1):
+            print(stack[i], end = " ")
+        s -= stack[level]
+        print()
+
+    def sol():
+        return s == n
+
+    def backtracking():
+        global level, s
+        s = 0
+        level = 1
+        init()
+        while level > 0:
+            h = True
+            v = False
+            while h is True and v is False:
+                h = succ()
+                if h is True:
+                    v = valid()
+            if h is True:
+                if sol() is True:
+                    printf()
+                else:
+                    level+=1
+                    init()
+            else:
+                level-=1
+
+    n = 4
+    stack = [0] * (n+1)
+    backtracking()
+
+func()
+```
+Ruby Language
+```ruby
+def func
+
+    def init
+      if $level == 1
+        $stack[$level] = 0
+      else
+        $stack[$level] = $stack[$level-1]-1
+      end
+    end
+
+    def succ()
+        if $stack[$level] < $n - $s
+           $stack[$level] += 1
+           return true
+        else
+           $s = $s - $stack[$level-1]
+           return false
+        end
+    end
+
+    def valid
+        if $stack[$level] <= $n - $s
+           $s = $s + $stack[$level]
+           return true
+        end
+        return false
+    end
+
+    def sol
+        return $s == $n
+    end
+
+    def printf
+      for i in 1..$level
+        print $stack[i], ' '
+      end
+      $s = $s - $stack[$level]
+      print "\n"
+    end
+
+    def solve
+      $s = 0
+      $level = 1
+      init()
+
+      while $level > 0
+            su = true
+            v = false
+            while su == true && v == false
+                  su = succ()
+                  if su == true
+                    v = valid()
+                  end
+                  if su == true
+                    if sol() == true
+                       printf()
+                    else
+                      $level = $level + 1
+                      init()
+                    end
+                  else
+                    $level = $level - 1
+                  end
+            end
+      end
+    end
+
+    $n = 5
+    $stack = [0] * ($n+1)
+    solve
+end
+
+func
+```
+
+Demos: https://ideone.com/mTFfYg
 
 25) Permutation n!
+
+C Language
+```c++
+#include <stdio.h>
+#define DIM 100
+
+int n, stack[DIM], explored[DIM];
+
+void print_permutation() {
+     for(int i = 1; i <= n; ++i) {
+       printf("%d ", stack[i]);
+     }
+     printf("\n");
+}
+
+void perm(int level) {
+     if(level > n) {
+        print_permutation();
+     } else {
+       for(int i = 1; i <= n; ++i) {
+         if(!explored[i]) {
+           stack[level] = i;
+           explored[i] = 1;
+           perm(level+1);
+           explored[i] = 0;
+         }
+       }
+     }
+}
+
+int main(int argc, char const *argv[]) {
+
+  n = 3;
+  perm(1);
+
+  return 0;
+}
+
+```
+Python Language
+```python
+#Problem: https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string2041/0
+
+class Solution:
+
+    def find_permutation(self, S):
+
+         L = list( S )
+
+         out = [ ]
+
+         n = len( L )
+
+         out = []
+
+         L.insert(0,0)
+
+         stack = [ 0 ] * ( n + 1 )
+
+         def sort(arr):
+
+             n = len(arr)
+             for i in range(1, n):
+                 aux = arr[i]
+                 j = i - 1
+                 while j>=0 and aux < arr[j]:
+                     arr[j+1] = arr[j]
+                     j-=1
+                 arr[j+1] = aux
+
+         def solution():
+
+             string = ""
+
+             for i in range(1, n + 1):
+
+                   string += L[stack[i]]
+
+             out.append(string)
+
+
+         def ok(level):
+
+            for i in range(1, level):
+
+                 if stack[i] == stack[level]:
+
+                     return False
+
+            return True
+
+         def solve(level):
+
+             if level > n:
+
+                 solution()
+
+             else:
+
+                 for i in range(1, n+1):
+
+                     stack[level] = i
+
+                     if ok(level) is True:
+
+                         solve(level+1)
+         solve(1)
+         out = [*set(out)]
+         sort(out)
+         return out
+
+ob = Solution()
+
+for i in ob.find_permutation("ABC"):
+
+    print(i, end = " ")
+
+```
+
+```c++
+#include <stdio.h>
+#define DIM 100
+
+int stack[DIM],
+    n;
+
+int valid(int level) {
+
+    for(int i = 1; i < level; i++) {
+
+      if(stack[i] == stack[level]) {
+
+        return 0;
+      }
+    }
+    return 1;
+}
+
+void display_solution() {
+
+      for(int i = 1; i <= n; ++i) {
+
+          printf("%d ", stack[i]);
+
+      }
+      printf("\n");
+}
+
+void solve(int level) {
+
+     if(level > n) {
+
+        display_solution();
+
+     } else {
+
+       for(int i = 1; i <= n; ++i) {
+
+           stack[ level ] = i;
+
+           if(valid( level ))
+
+              solve( level + 1 );
+       }
+     }
+}
+
+int main(int argc, char const *argv[]) {
+
+  n = 5;
+
+  solve( 1 );
+
+  return 0;
+}
+```
+
 ```py
 def fact(n):
     if n == 0:
@@ -691,6 +1278,30 @@ def main():
     bk()
     print(fact(n))
 main()
+```
+
+26) Subsets of a set
+```py
+def func():
+    def subset(working_set, k, n):
+    	if k == n:
+    	   s = {k for k in working_set if working_set[k] == 1}
+    	   solutions.append(s)
+    	else:
+    		k+=1
+    		for i in [0,1]:
+    			working_set[k] = i
+    			print(working_set)
+    			subset(working_set, k, n)
+    global solutions
+    solutions = []
+    n = 3
+    subset({}, 0, n)
+    print(solutions)
+func()    	
+```
+
+Geometry
 
 ```
 26) Sa se verifice daca doua drepte sunt paralele. Se

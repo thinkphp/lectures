@@ -4,4 +4,4 @@ title: Trekking
 permalink: /trekking/
 ---
 
-* [mergesortv@gmail.com](mergesortv@gmail.com)
+* [https://www.strava.com/athletes/18263314](https://www.strava.com/athletes/18263314)
