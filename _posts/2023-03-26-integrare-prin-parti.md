@@ -31,7 +31,7 @@ Insa observatia:
 S (fg)'(x) dx = fg + c (2)
 ```
 
-din (2) and (3) rezulta:
+din (1) and (2) rezulta:
 ```
 S f(x)g'(x) fx = fg - S g(x) f'(x) fx
 ```
