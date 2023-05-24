@@ -18,3 +18,28 @@ while(!faculty.isEmpty()) {
   cout<<faculty.dequeue()<<endl;//A C B M
 }
 ```
+
+Here is another example of using the queue.PriorityQueue class to create a priority queue of tasks with different priorities:
+
+```
+import queue
+
+# Create a priority queue
+pq = queue.PriorityQueue()
+
+# Put some tasks with different priorities
+pq.put((2, "Clean the house"))
+pq.put((1, "Study for exam"))
+pq.put((3, "Watch a movie"))
+
+# Get the tasks in order of priority
+while not pq.empty():
+priority, task = pq.get()
+print(f"Priority: {priority}, Task: {task}")
+
+Output:
+
+Priority: 1, Task: Study for exam
+Priority: 2, Task: Clean the house
+Priority: 3, Task: Watch a movie
+```
