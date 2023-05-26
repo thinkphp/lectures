@@ -47,4 +47,4 @@ By the way, here is list of educational resources you might find useful:
 
 * [Codeforce Programming Contests](https://codeforces.com/profile/thinkphp)
 
-* [Advent of code] (https://adventofcode.com/)
+* [Advent of code](https://adventofcode.com/)
