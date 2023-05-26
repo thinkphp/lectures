@@ -15,10 +15,11 @@ Maths, AI, JavaScript, Accessibility, Algorithms.
 
 By the way, here is list of educational resources you might find useful:
 
+* [C Programming Language: Dennis Ritchie, Brian Kernighan](https://kremlin.cc/k&r.pdf)
+
 * [Coders at Work: Reflections on the Craft of Programming](https://www.amazon.com/Coders-Work-Reflections-Craft-Programming/dp/1430219483)
 
 * [The art of computing programming: Donalt Knuth](https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043)
-
 
 * [Introduction to Algorithms: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein](https://www.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/)
 
@@ -45,3 +46,5 @@ By the way, here is list of educational resources you might find useful:
 * [USACO Training Program Gateway](https://train.usaco.org/)
 
 * [Codeforce Programming Contests](https://codeforces.com/profile/thinkphp)
+
+* [Advent of code] (https://adventofcode.com/)
