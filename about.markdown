@@ -12,6 +12,7 @@ Maths, AI, JavaScript, Accessibility, Algorithms.
 * [https://github.com/thinkphp](https://github.com/thinkphp)
 
 * [http://thinkphp.ch](http://thinkphp.ch)
+<<<<<<< HEAD
 
 By the way, here is list of educational resources you might find useful:
 
@@ -48,3 +49,5 @@ By the way, here is list of educational resources you might find useful:
 * [Codeforce Programming Contests](https://codeforces.com/profile/thinkphp)
 
 * [Advent of code](https://adventofcode.com/)
+=======
+>>>>>>> b1866836b1c8c60e2c0e6d2d9d7fde1fb4c5ce3b
