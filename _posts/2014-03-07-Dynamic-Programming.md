@@ -23,5 +23,8 @@ sa fie independente, in cadrul acestei metode, subproblemele care apar in descom
 ### Applications
 
 * LIS - Longest Increasing Subsequence
-* LCS - Longest Commong Subsequece
+* LCS - Longest Common Subsequece
 * MSS - Maximum Subarray Sum
+* Tri - Triangle Problem
+* Comb - C(n,k) using Pascal Triangle
+* Dist - Levenstein Distance
