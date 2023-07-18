@@ -22,5 +22,6 @@ sa fie independente, in cadrul acestei metode, subproblemele care apar in descom
 
 ### Applications
 
-* LIS
-* LCS
+* LIS - Longest Increasing Subsequence
+* LCS - Longest Commong Subsequece
+* MSS - Maximum Subarray Sum
