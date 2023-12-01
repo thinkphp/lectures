@@ -1,3 +1,3 @@
-## Motivation Dream
+## Lectures
 
-https://www.youtube.com/watch?v=g-jwWYX7Jlo
+https://thinkphp.github.io/
