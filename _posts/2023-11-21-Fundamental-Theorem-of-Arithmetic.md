@@ -1,8 +1,11 @@
 ---
 layout: post
 disqus: y
-title: Fundamental Theorem of Arithmetic
+title: Teorema Fundamentala a Aritmeticii
 ---
+AAAAAAAAAAAAAAAAAAAAAAAAA
+BBBBBBBBBBBBBBBBBBBBBBBBB
+CCCCCCCCCCCCCCCCCCCCCC
 The Fundamental Theorem of Arithmetic states that every positive integer $n$ can be written as a product n = p1 p2 p3....pk, pi where the pi are all prime numbers; moreover, this expression for n (called its prime factorization) is unique, up to rearrangement of the factors.
 
 Note that the property of uniqueness is not, in general, true for other sorts of factorizations. For example, most integers have many factorizations into 2 parts: 30 = 2 15 = 3 10 = 5 6. Thus, the Fundamental Theorem of Arithmetic tells us in some sense that "factorizations into prime numbers is deeper than factorization into two parts."
