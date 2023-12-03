@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-Algorithms, Data Structures, C // C++ // Python // Ruby //JavaScript // PHP // Calculus // Algebra.
+Algorithms // Data Structures, C // C++ // Python // Ruby //JavaScript // PHP // Calculus // Algebra.
 
 * [http://adrianstatescu.ch](http://adrianstatescu.ch)
 
