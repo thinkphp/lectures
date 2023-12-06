@@ -25,3 +25,18 @@ def hello() -> str:
 return 'Hello world from Flask!'
 app.run()
 ```
+
+Run Flask f rom your OS command line
+
+```
+python3 hello_flask.py
+
+Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+Django is a hugely popular web application framework
+within the Python community. It has an especially strong,
+prebuilt administration facility that can make working
+with large webapps very manageable. It’s overkill for
+what we’re doing here, so we’ve opted for the much
+simpler, but more lightweight, Flask.
