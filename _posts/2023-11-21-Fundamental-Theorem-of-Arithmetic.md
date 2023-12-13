@@ -116,10 +116,5 @@ public class Main {
 ```
 
 Reference:
-https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Arithmetic
 
-# Andrei Botorogeanu - Algoritmi si Data Structures.
-
-# Arhiva de probleme Flip:
-
-* https://infoarena.ro/problema/flip
+* https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Arithmetic
