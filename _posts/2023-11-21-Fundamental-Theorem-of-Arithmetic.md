@@ -120,6 +120,8 @@ https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Arithmetic
 
 Andrei Botorogeanu - Algoritmi si Data Structures.
 
-Problema1: Link1
-Problema2: Link2
-Problema3: Link3
+# Problema1: Link1
+
+# Problema2: Link2
+
+# Problema3: Link3
