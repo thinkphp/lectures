@@ -118,12 +118,8 @@ public class Main {
 Reference:
 https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Arithmetic
 
-Andrei Botorogeanu - Algoritmi si Data Structures.
+# Andrei Botorogeanu - Algoritmi si Data Structures.
 
-# Problema1: Link1
+# Arhiva de probleme Flip:
 
-# Problema2: Link2
-
-# Problema3: Link3
-
-# Flip = arhiva de probleme: https://infoarena.ro/problema/flip
+* https://infoarena.ro/problema/flip
