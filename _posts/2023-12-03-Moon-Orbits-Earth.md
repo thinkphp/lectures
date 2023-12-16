@@ -33,3 +33,15 @@ std::stod(orbits.substr(sz)): This line converts the substring starting from the
 The program then outputs the Moon's orbit and the ratio of the Earth's orbit to the Moon's orbit.
 
 Keep in mind that the provided string must follow the expected format (two space-separated numbers) for this code to work correctly. If the input format is different, you may need to adjust the code accordingly.
+
+```python
+orbits = "365.24 29.53"
+
+earth, sz = float(orbits.split()[0]), 0
+
+moon = float(orbits.split()[1])
+
+print(moon)
+
+print(f"The moon completes {earth/moon} orbits per Earth year.")
+```
