@@ -5,8 +5,6 @@ permalink: /about/
 ---
 Algorithms // Data Structures, C // C++ // Python // Ruby //JavaScript // PHP // Calculus // Algebra.
 
-* [http://adrianstatescu.ch](http://adrianstatescu.ch)
-
 * [http://thinkphp.github.io](http://thinkphp.github.io)
 
 * [https://github.com/thinkphp](https://github.com/thinkphp)
