@@ -4,8 +4,6 @@ disqus: y
 title: Men s Search for Meaning
 ---
 
-# Man's Search for Meaning by Viktor Frankl
-
 ## Book Summary
 
 Viktor Frankl's "Man's Search for Meaning" is a powerful memoir and psychological treatise based on his experiences as a prisoner in Nazi concentration camps during World War II. The book is divided into two parts: the first describing his time in the camps, and the second outlining his theory of logotherapy.
