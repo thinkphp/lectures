@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Men's Search for Meaning
+title: Men s Search for Meaning
 ---
 
 # Man's Search for Meaning by Viktor Frankl
