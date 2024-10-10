@@ -1,3 +1,3 @@
 ## Lectures
 
-https://thinkphp.github.io/lectures
+https://thinkphp.github.io/
