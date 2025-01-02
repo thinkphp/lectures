@@ -9,7 +9,7 @@ Algorithms // Data Structures, C // C++ // Python // Ruby //JavaScript // PHP //
 
 * [https://github.com/thinkphp](https://github.com/thinkphp)
 
-* [http://thinkphp.ch](http://thinkphp.ch)
+* [http://thinkphp.it](http://thinkphp.it)
 
 By the way, here is list of educational resources you might find useful:
 

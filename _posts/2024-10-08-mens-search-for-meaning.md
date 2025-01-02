@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Men s Search for Meaning
+title: Men's Search for Meaning
 ---
 Viktor Frankl's "Man's Search for Meaning" is a powerful memoir and psychological treatise based on his experiences as a prisoner in Nazi concentration camps during World War II. The book is divided into two parts: the first describing his time in the camps, and the second outlining his theory of logotherapy.
 In the camps, Frankl observed that prisoners who maintained a sense of purpose and meaning in their lives were more likely to survive the horrific conditions. He realized that while they couldn't control their circumstances, they could control their reactions to those circumstances. Frankl argues that the primary drive in human beings is not pleasure (as Freud believed) or power (as Adler thought), but the pursuit of meaning. He posits that life has meaning under all circumstances, even the most miserable ones.
