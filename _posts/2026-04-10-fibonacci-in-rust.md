@@ -4,8 +4,6 @@ disqus: y
 title: Fibonacci Function in Rust
 ---
 
-## Fibonacci Function in Rust
-
 The following function calculates the Fibonacci number at a given position `n`:
 
 ```rust
