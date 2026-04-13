@@ -4,7 +4,7 @@ disqus: y
 title: Collatz Conjecture 3n + 1 in Rust
 ---
 
-### Time Complexity O(n) Space O(1)
+### Iterative Version Time Complexity O(n) Space O(1)
 
 
 ```rust
@@ -52,7 +52,7 @@ fn main() {
 
 
 
-### Recursive Variant Time Complexity O(n) Space O(1)
+### Recursive Version Time Complexity O(n) Space O(1)
 
 ```rust
 
