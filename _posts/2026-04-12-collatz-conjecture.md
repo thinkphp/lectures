@@ -4,7 +4,8 @@ disqus: y
 title: Collatz Conjecture 3n + 1 in Rust
 ---
 
-### Time Complexity O(n) Space O(1)
+### Iterative Version Time Complexity O(n) Space O(1)
+
 
 ```rust
 
@@ -33,18 +34,22 @@ fn collatz_sequence(mut n: u64) {
 
 fn main() {
 
-   let mut input = String::new();
+   let mut input = String::new(); //creates an enpty mutable string that will store the user input
    
-   io::stdin().read_line(&mut input).unwrap();
+   io::stdin().read_line(&mut input).unwrap(); //reads a full line from standard input keyboard and store it in input
+   //for example, if you type 23, then input becomes "23\n" including newline character,so input becomes 23
    
    let n: u64 = input.trim().parse().unwrap();
+   //attempts to convert the trimmed string into a number type
+   //specifies that the parsed valud should be interpreted as an unsigned 64-bit integer(u64)
+   
+   //unwrap() -> if parsing succeeds, it returns the numbers, otherwise if the parsing fails (e.g. input = "abc") the program will crash (panic)
    
    collatz_sequence( n );
 }
 ```
 
-
-### Recursive Variant Time Complexity O(n) Space O(1)
+### Recursive Version Time Complexity O(n) Space O(1)
 
 ```rust
 
@@ -55,6 +60,7 @@ fn collatz_recursive(n: u64) {
     print!("{} ", n);
 
     if n == 1 {
+    
         return;
     }
 
