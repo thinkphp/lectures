@@ -4,8 +4,6 @@ disqus: y
 title: Cook–Levin Theorem
 ---
 
-# Cook–Levin Theorem
-
 ## Overview
 
 The Cook–Levin Theorem is one of the fundamental results in theoretical computer science and complexity theory. It establishes the first known NP-complete problem and forms the foundation of the theory of NP-completeness.
