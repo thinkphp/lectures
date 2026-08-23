@@ -74,3 +74,10 @@ Observăm totodată că marile minți nu sunt mereu de acord. Mari gânditori sa
 Spun acest lucru pentru cei care ar putea crede că sola Scriptura înseamnă să nu citești nimic în afară de Biblie – ceea ce ar conduce la o dezolantă incultură.
 Așadar, lectura marilor cărți, începând cu bibliotheca și continuând cu arhiva celor trei milenii de literatură și gândire europeană, este un exercițiu de îndrăzneală, de smerenie și de discernământ.
 Lumea ne bombardează cu mediocritatea și vulgaritatea ei, cu texte derizorii și dezlânate, cu trivialități și imagini, cu păreri agramate și bârfe irelevante. A dialoga cu marile minți ne ferește de vulgaritatea lumii.
+
+
+> Teleologie → scopul existenței.
+Escatologie → sfârșitul și destinul ultim.
+Teodicee → existența răului în raport cu Dumnezeu.
+Etică → binele și răul în acțiunile umane.
+Hamartiologie → păcatul.
