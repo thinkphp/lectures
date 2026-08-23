@@ -4,11 +4,30 @@ disqus: y
 title: Charlie Takeaway
 ---
 
+> You need a right orientation!
+
+> It’s no wonder Bora Bora has long been regarded as one of the world’s most romantic destinations. Here, turquoise waters and lush green mountains meet, and ancient Polynesian traditions coexist with modern luxury, a variety of water sports, white sand beaches, vibrant sunsets, and friendly locals.
+
+
 > You do not need to meet someone in person to learn from them, just read their books. Through reading, you can connect with great thinkers of the past and present
 
 > Fiecare carte este o cheie catre camere necunoscute din castelul care se afla in interiorul tau.
 
 > Imi aduc aminte dintr-o carte de psihologie, nu mai stiu care, urmatoare idee:  constiinta propriei superioriti poate fi un semn de fragilitate. Valoarea  authentica nu are nevoie de autoproclamare. Si cand crezi ca stii mai mult apare  riscul sa-ti blochezi dezvoltarea.
+
+
+> Dear Professor Zeilberger
+I am very happy to be able to write you with the information that the
+ICA Council has now finished its studies of the rather voluminous
+material submitted in connection with nominations for the ICA 2004
+Medals. The results will be announced at the meeting in Florida on
+March 8, but I wanted to let you know that Council voted to award you
+a 2004 Euler Medal.
+Hearty personal congratulations. I will be in touch later after the
+medal is engraved, about a suitable venue for the medal presentation.
+Ralph Stanton
+Honorary Registrar of the ICA
+
 
 > to proceed(verb) vs proceeds (plural noun)
 Sunt doua cuvinte diferite chiar daca proceeds provine din verbul proceed.
@@ -81,3 +100,31 @@ Escatologie → sfârșitul și destinul ultim.
 Teodicee → existența răului în raport cu Dumnezeu.
 Etică → binele și răul în acțiunile umane.
 Hamartiologie → păcatul.
+
+
+> blitz nostalgic cu „acalmia” turistică de la mănăstirea marelui meteor. îmi amintesc că acolo m-am decuplat – zgîrcit, păcătosul... – de la isteria cronometrului. e un loc unde geografia zădărnicește aritmetica zilei. te apleci spre prăpăstii, urmărești păsări, simți vata rătăcitoare a norilor, amușini zenitul. ieși din timpul maniilor tale, din locomoția narcisică a reportajului de sine, din secvențialitatea proastă a călătoriei-ospăț. uiți de tine într-un abandon alpin mut, adeverit de cruci și mase de aer proaspăt, ce traduc simbolic perenitatea lucrătoare a duhului...
+
+
+> Dialogul dintre Amar și Adel inițiază, în roman, o discuție care induce un al doilea sens important al parabolei: dialogul dintre mentalitatea europeană și cea arabo-orientală. Amar înțelege, încetul cu încetul, faptul că solidaritatea creștină nu este suficientă pentru a transgresa barierele de mentalitate. Pentru aceasta, este nevoie de dialog și de cunoaștere, de demontarea prejudecăților și răspândirea cunoștințelor pozitive.
+
+
+> Aurea mediocritas (lat. „Mediocritate aurită”), două cuvinte desprinse dintr-o odă (II,10,5) a lui Horațiu. „Acest frumos vers – a spus Voltaire – îl știe orice om de litere pe dinafară”. Oda lui Horațiu cîntă avantajele unui trai modest, departe de splendorile măririlor și ale vieții zgomotoase. De aceea, deși traduse exact cuvintele înseamnă „mediocritate aurită”, e bine să se știe că nu este vorba de mediocritate, în înțelesul comun al cuvîntului, ci de o stare mijlocie, pe care poetul, la vremea aceea, o socotea o chezășie a liniștii sufletești și o cale spre fericire, motiv pentru care o și numește poetic „aurea” – aurită. De altfel, în limba latină, mediocritas înseamnă în primul rînd: moderație, măsură, cale de mijloc. Expresia, mai totdeauna citată în latinește, a căpătat însă cu timpul un sens peiorativ. LIT.
+
+
+> John 6:3,5-6,18
+[3]Then Jesus went up on a mountainside and sat down with his disciples.
+[5]When Jesus looked up and saw a great crowd coming toward him, he said to Philip, “Where shall we buy bread for these people to eat?”
+[6]He asked this only to test him, for he already had in mind what he was going to do.
+[18]A strong wind was blowing and the waters grew rough.
+
+> Noi ființele umane operăm continuu prin comparație. Experiențele transculturale te dezvoltă enorm, pentru că îți oferă un număr imens de elemente de comparație. Când am ajuns în America, în anii ’90, prietenii americani, profesori universitari mi-au spus: „Când veți pleca de aici, nu veți mai fi același om.” Asta nu am înțeles-o deloc. Mi-a trebuit timp. Nu contează că o societate este superioră alteia sau este inferioară alteia. Contează că e diferită. Așa că, imersându-te în acea cultură diferită și putând face comparație cu propria ta cultură, cu propria ta artă, cu propria ta familie, cu prietenii tăi, cu locuința ta, cu stilul tău de viață, cu hrana pe care o consumi, tu te îmbogățești.
+
+
+> Un institut de studii avansate este un institut de cercetări, care oferă stagii de lucru unor savanţi de pretutindeni, cerându-le doar să se întâlnească săptămânal, pentru a-și discuta proiectele cu toţi ceilalţi colegi. E foarte important, pentru că fiecare lucrează pe un domeniu diferit și este obligat, astfel, să se deschidă spre orizontul de cercetare al altora. Rezultă un îmbogăţitor dialog transdisciplinar.
+
+
+> un tânăr care nu trăiește niciodată, în perioada lui de formare, sentimentul admiraţiei nu se formează cum trebuie. Admiraţia face parte din înzestrarea de care are nevoie orice tânăr ca să capete contur, ca să evolueze. Or, acum predomină spiritul critic.
+
+
+> Există multe definiții ale modernismului. Cea mai la îndemână e aceea care îl definește drept un curent cultural – în cazul nostru, literar – de reînnoire estetică, extrem de productiv în intervalul anilor 1880-1930, în Europa și în Statele Unite. Un mare specialist al domeniului, Peter Gay, spunea că modernismul e „mai ușor de exemplificat decât de definit“. Matei Călinescu demonstra chiar existența mai multor „modernisme“. Ca anglist și americanist, mă simt apropiat de definițiile care accentuează ideea de înnoire (ca în faimosul îndemn „Make It New“ al lui Ezra Pound): arta trebuie să se reinventeze continuu, fără a repeta mecanic formele vechi. Ceea ce nu înseamnă că trecutul trebuie abandonat. E vorba, în principal, de percepția subiectivă a timpului – sub influența teoriei lui Henri Bergson – și de multiplicarea punctelor de vedere. Ele au drept scop depășirea tehnicilor și a convențiilor curentului dominant, realismul. Pentru a-și atinge scopurile, moderniștii au avut ca metode predilecte monologul interior și fluxul conștiinței. Virginia Woolf lansase, de altfel, o frază care avea să devină celebră: „În jurul lui decembrie 1910, lumea s-a schimbat“. Ea se referea la prima expoziție post-impresionistă de la Londra, realizată de Roger Fry, eveniment considerat un moment de cotitură în impunerea mișcării moderniste.
+Probabil că punctul de maximă creativitate al modernismului anglo-saxon a fost atins în 1922, când James Joyce a publicat Ulysses și T.S. Eliot The Waste Land. Virginia Woolf a tipărit și ea în acel an un roman experimental, Jacob’s Room. Aș putea intra în detalii, menționând relativismul, fragmentarismul, perceperea realității drept o entitate interioară și schimbătoare (și nu exterioară și imuabilă, ca în doctrinele artistice anterioare), „frângerea centrului“ (ca să citez o sintagmă faimoasă dintr-un poem al lui William Butler Yeats), preeminența experienței individuale, gândirea simbolică și multe, multe altele.
