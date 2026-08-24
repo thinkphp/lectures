@@ -6,7 +6,7 @@ title: Charlie Takeaway
 
 > You need a right orientation!
 
-> Carlon Castaneda. The Teaching of Carlos Casteneda. Doe this heart have a heart? Any Path is only a Path, and there is no affront, to oneself or to others, in dropping it that is what your heart tells you...look at every path closely and deliberately. Try it as many as you think necessary. Then ask yourself, and yourself alone, one question... Does this path have a heart? If it does, the path is good; if it does not it is of no use.
+> Carlos Castaneda. The Teaching of Carlos Casteneda. Doe this heart have a heart? Any Path is only a Path, and there is no affront, to oneself or to others, in dropping it that is what your heart tells you...look at every path closely and deliberately. Try it as many as you think necessary. Then ask yourself, and yourself alone, one question... Does this path have a heart? If it does, the path is good; if it does not it is of no use.
 
 > It’s no wonder Bora Bora has long been regarded as one of the world’s most romantic destinations. Here, turquoise waters and lush green mountains meet, and ancient Polynesian traditions coexist with modern luxury, a variety of water sports, white sand beaches, vibrant sunsets, and friendly locals.
 
